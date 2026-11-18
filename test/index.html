@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>패킷 길찾기 — 테스트</title>
+<style>body{font-family:sans-serif;margin:2rem}li{margin:.2rem 0}</style>
+</head>
+<body>
+<h1>테스트</h1>
+<div id="result">실행 중…</div>
+<!-- file:// 에서도 열리도록 일반 script 만 사용 (PLAN 2절). 새 모듈을 만들면 여기에 추가한다. -->
+<script src="harness.js"></script>
+<script src="../src/topology.js"></script>
+<script src="../src/service.js"></script>
+<script src="../src/address.js"></script>
+<script src="../src/validator.js"></script>
+<script src="../src/engine.js"></script>
+<script src="../src/analyzer.js"></script>
+<script src="../src/history.js"></script>
+<script src="../src/policy.js"></script>
+<script src="topology.test.js"></script>
+<script src="service.test.js"></script>
+<script src="address.test.js"></script>
+<script src="validator.test.js"></script>
+<script src="engine.test.js"></script>
+<script src="analyzer.test.js"></script>
+<script src="history.test.js"></script>
+<script src="policy.test.js"></script>
+<script>PWTest.report(PWTest.run());</script>
+</body>
+</html>

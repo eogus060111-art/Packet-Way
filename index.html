@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>패킷 길찾기 — 방화벽 정책 시뮬레이터</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app"></div>
+
+<!-- file:// 에서 열리도록 ES 모듈 대신 일반 script 를 순서대로 로드한다 (docs/PLAN.md 2절).
+     로딩 순서: topology → service/address → validator → engine → analyzer → history → policy → ui -->
+<script src="src/topology.js"></script>
+<script src="src/service.js"></script>
+<script src="src/address.js"></script>
+<script src="src/validator.js"></script>
+<script src="src/engine.js"></script>
+<script src="src/analyzer.js"></script>
+<script src="src/history.js"></script>
+<script src="src/policy.js"></script>
+<script src="src/ui.js"></script>
+<script>PW.ui.init(document.getElementById('app'));</script>
+</body>
+</html>
